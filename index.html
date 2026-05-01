@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdulrahman Electric tools</title>
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#fff;
+color:#000;
+}
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+border-bottom:2px solid #000;
+}
+header h1{
+font-size:20px;
+letter-spacing:1px;
+}
+nav a{
+margin-left:15px;
+text-decoration:none;
+color:#000;
+font-weight:bold;
+}
+.hero{
+text-align:center;
+padding:60px 20px;
+border-bottom:1px solid #000;
+}
+.hero h2{
+font-size:32px;
+margin-bottom:10px;
+}
+.hero p{
+max-width:600px;
+margin:auto;
+}
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+padding:40px;
+}
+.card{
+border:2px solid #000;
+padding:15px;
+text-align:center;
+transition:0.3s;
+}
+.card:hover{
+background:#000;
+color:#fff;
+}
+.card a{
+display:inline-block;
+margin-top:10px;
+padding:8px 12px;
+border:1px solid #000;
+text-decoration:none;
+color:#000;
+}
+.card:hover a{
+color:#fff;
+border-color:#fff;
+}
+footer{
+text-align:center;
+padding:20px;
+border-top:2px solid #000;
+margin-top:20px;
+}
+button{
+padding:10px 15px;
+border:2px solid #000;
+background:#fff;
+cursor:pointer;
+}
+button:hover{
+background:#000;
+color:#fff;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Abdulrahman Electric tools</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Electric & Home Tools Store</h2>
+<p>High quality electrical and home tools at affordable prices. Trusted service and fast response.</p>
+<br>
+<button onclick="showMessage()">Shop Now</button>
+</section>
+
+<section class="products" id="products">
+<div class="card">
+<h3>LED Lamp</h3>
+<p>Energy saving light bulb</p>
+<a href="#">Order</a>
+</div>
+<div class="card">
+<h3>Power Strip</h3>
+<p>Safe multi socket extension</p>
+<a href="#">Order</a>
+</div>
+<div class="card">
+<h3>Mini Flashlight</h3>
+<p>Portable strong light</p>
+<a href="#">Order</a>
+</div>
+<div class="card">
+<h3>Electrical Cable</h3>
+<p>High quality wiring cable</p>
+<a href="#">Order</a>
+</div>
+</section>
+
+<footer id="contact">
+<p>Contact us on Facebook or WhatsApp for orders</p>
+<p>&copy; 2026 Abdulrahman Electric tools</p>
+</footer>
+
+<script>
+function showMessage(){
+alert("Welcome to Abdulrahman Electric tools!");
+}
+</script>
+
+</body>
+</html>
